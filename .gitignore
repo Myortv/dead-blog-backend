@@ -1,0 +1,5 @@
+api_key.key
+env.sh
+public_key.pem
+private_key.pem
+**/__pycache__/**
