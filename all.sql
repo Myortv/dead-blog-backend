@@ -57,7 +57,7 @@ EXECUTE FUNCTION update_updated_at();
 
 create table blog_post_comment(
 	id serial primary key,
-	blog_post_id int references blog_post(id),
+	blog_post_id int references blog_post(id) on delete cascade,
 	user_name varchar(64),
 	body text,
 	created_at timestamptz not null default now()
